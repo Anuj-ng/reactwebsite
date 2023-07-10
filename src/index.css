@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Muli&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Muli", sans-serif;
+}
+
+.navbar {
+  background-color: #fff !important;
+}
+
+.navbar-brand {
+  font-size: 1.9rem !important;
+  color: #565387 !important;
+}
+
+.navbar a {
+  font-size: 1.3rem;
+  text-transform: capitalize;
+}
+
+.active {
+  font-weight: bold;
+  border-bottom: 1px solid #565387;
+}
+.navbar a:hover {
+  color: #3498db !important;
+}
+@media (max-width: 991px) {
+  .navbar-brand {
+    font-size: 1.5rem !important;
+  }
+  .active {
+    font-weight: bold;
+    border-bottom: none;
+  }
+}
+
+#header {
+  width: 100%;
+  height: 80vh;
+  margin-top: 4.375rem;
+}
+#header h1 {
+  margin: 0 0 0.625rem 0;
+  font-size: 3rem;
+  font-weight: 700;
+  color: black;
+}
+#header .brand-name {
+  color: #3498db;
+}
+#header h2 {
+  color: #484848;
+  font-size: 1.5rem;
+}
+#header .btn-get-started {
+  font-weight: 500;
+  font-size: 1rem;
+  letter-spacing: 0.063rem;
+  display: inline-block;
+  padding: 0.625rem 1.875rem;
+  border-radius: 3.125rem;
+  transition: 0.5s;
+  color: #3498db;
+  border: 0.125rem solid #3498db;
+  text-decoration: none;
+}
+#header .btn-get-started:hover {
+  background: #3498db;
+  color: #fff;
+}
+
+#header img {
+  text-align: right;
+}
+
+footer p {
+  color: #3498db;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  bottom: 0;
+  text-align: center; 
+  width: 100vw;
+}
+#header .animated {
+  animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+@keyframes up-down {
+  0% {
+    transform: translateY(0.625rem);
+  }
+  100% {
+    transform: translateY(-0.625rem);
+  }
+}
